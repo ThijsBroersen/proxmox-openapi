@@ -1,0 +1,23 @@
+{
+  "name": "proxmox-openapi-generator",
+  "version": "1.0.0",
+  "description": "OpenAPI generator for Proxmox VE API",
+  "main": "generate-openapi.js",
+  "scripts": {
+    "download": "curl -o apidoc.js https://pve.proxmox.com/pve-docs/api-viewer/apidoc.js",
+    "generate": "node generate-openapi.js"
+  },
+  "keywords": [
+    "proxmox",
+    "openapi",
+    "api",
+    "generator"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "yaml": "^2.3.4",
+    "@apidevtools/swagger-parser": "^10.1.0"
+  }
+}
+
